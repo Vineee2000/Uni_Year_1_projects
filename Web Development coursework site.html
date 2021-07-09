@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Task Manager</title>
+	<style>
+		.currentTasks {
+			float: left;
+		}
+		h4 {
+			display: inline
+		}
+		.tasklist {
+			width:50%;
+			display: inline block;
+			float: left;
+			text-align: left;
+		}
+		.details {
+			width:50%;
+			display: inline block;
+			float: right;
+		}
+		.newTask {
+			float: left;
+			width:75%;
+		}
+		.desc {
+			width: 80%;
+			padding: 10px;
+		}
+		.left {
+			float: left;
+		}
+		.right {
+			float: right;
+		}
+		.center {
+			margin: auto;
+		}
+		.desc-buttons{
+			float:left;
+			width:60%;
+			text-align: center;
+		}
+		.task-buttons {
+			height: 50px;
+			width: 80%;
+			margin: auto;
+		}
+	</style>
+  </head>
+  <body>
+	<div class="currentTasks">
+		<table class="tasklist">
+			<tr>
+				<th> <input type="button" value="Due in"> </th>
+				<th> <input type="button" value="Task"> </th>
+				<th> <input type="button" value="Priority"> </th>
+			</tr>
+				<td> 24/07/2020 </td>
+				<td> Do the imaginary laundry </td>
+				<td> Low </td>
+			<tr>
+				<td> 22/03/2019 </td>
+				<td> Do this thing </td>
+				<td> High </td>
+			</tr>
+			<tr>
+			</tr>
+		</table>
+		<div class="details">
+			<h4>Task description:</h4>
+			<br>
+			<p class="desc">Well, basically, I am absolutely buggered, but that's in general. For this one, I just need a whole bunch of text to see how this goddamn field behaves.</p>
+			<div>
+				<h4>Status:</h4>
+				Due in 22/03/2019
+			</div>
+			<br>
+			<div class="desc-buttons">
+			<input type="button" value="Delete" class="left">
+			<input type="button" value="Modify" class="center">
+			<input type="button" value="Edit" class="right">
+			</div>
+		</div>
+		</div>
+	<div class="newTask">
+		<div class="task-buttons">
+			<input type="button" value="New Task" class="left">
+		</div>
+		<div>
+			<br>
+			<h4> Due date </h4>
+			<input type="text">
+		</div>
+		<div>
+			<h4> Priority: </h4>
+			<select>
+				<option> High </option>
+				<option> Medium </option>
+				<option> Low </option>
+			</select>
+		</div>
+		<div>
+			<h4> Description: </h4>
+			<br>
+			<textarea>
+			</textarea>
+		</div>
+		<div>
+			<input type="button" value="Create" class="right">
+		</div>
+	</div>
+  </body>
+</html>
